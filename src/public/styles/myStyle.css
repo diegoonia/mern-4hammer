@@ -1,0 +1,23 @@
+.shopping-cart-text {
+    font-size: 0.8rem;
+    color: #797979;
+}
+
+.color-gray {
+    color: #333333
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* BUTTON */
