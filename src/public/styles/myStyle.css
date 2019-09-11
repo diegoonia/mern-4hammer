@@ -3,8 +3,12 @@
     color: #797979;
 }
 
-.color-gray {
-    color: #333333
+.primary-color {
+    color: #555555
+}
+
+.sec-color {
+    color: #999999
 }
 
 .flex {
@@ -19,5 +23,3 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     letter-spacing: 2px;
 }
-
-/* BUTTON */

@@ -9,7 +9,23 @@ class NavBar extends Component {
     render() {
         return (
             <div>
+                {/* TOP NAVBAR */}
+                <nav class="navbar bg-white">
+                    <span class="mb-0">
+                        <text class="ml-3 mr-2 primary-color small">011 1122-3344</text>
+                        <text class="primary-color">|</text>
+                        <a class="ml-2 sec-color small" href="#">info@4hammer.com</a>
+                    </span>
+                    <span class="mb-0">
+                        <a class="mr-2 primary-color small" href="#">Iniciar Sesión</a>
+                        <text class="primary-color">|</text>
+                        <a class="ml-2 mr-3 primary-color small" href="#">Crear Cuenta</a>
+                    </span>                    
+                </nav>
+                
+                <hr className="bg-white my-0"/>
 
+                {/* BOTTOM NAVBAR */}
                 <nav className="navbar sticky-top navbar-expand-md bg-white navbar-light py-2">
                     <img className="ml-5" src="../images/4hammer_logo.PNG" />
 
@@ -46,7 +62,7 @@ class NavBar extends Component {
                         </form>
 
                         <div className="mr-5 pr-3 pl-1 ml-2">
-                            <i className="fas fa-shopping-cart fa-lg color-gray"></i>
+                            <i className="fas fa-shopping-cart fa-lg primary-color"></i>
                             <div className="shopping-cart-text">$ 0,00</div>
                         </div>
 
