@@ -14,7 +14,8 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 // Routes
-app.use('/api/products', require('./routes/product.routes.js'))
+app.use('/api/products', require('./routes/products.routes.js'))
+app.use('/api/categories', require('./routes/categories.routes.js'))
 app.use(express.static(path.join(__dirname, '/../src/public')));
 app.use('*',  (req, res)=> {
     res.sendFile(path.join(__dirname, '/../src/public/', 'index.html'));
