@@ -15,6 +15,10 @@ app.use(express.json());
 
 // Routes
 app.use('/api/products', require('./routes/product.routes.js'))
+app.use(express.static(path.join(__dirname, '/../src/public')));
+app.use('*',  (req, res)=> {
+    res.sendFile(path.join(__dirname, '/../src/public/', 'index.html'));
+   });
 
 // Static files
 app.use(express.static(path.join(__dirname, 'public')));
