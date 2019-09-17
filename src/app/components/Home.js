@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from './general/NavBar';
+import Footer from './general/Footer';
 
 class Home extends Component {
 
@@ -54,6 +55,8 @@ class Home extends Component {
                         <h3 className="mb-3">DESTACADOS</h3>
                     </div>
                 </div>
+
+                <Footer/>
             </div>
         )
     }
