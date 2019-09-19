@@ -10,8 +10,12 @@ class Contact extends Component {
     render() {
         return (
             <div>
-                <NavBar/>
-                <h1>Contactanos</h1>
+                <NavBar />
+                <div className="bg-white mt-3 mx-4 py-4">
+                    <div className="flex container">
+                        <h3 className="mb-4">CONTACTANOS</h3>
+                    </div>
+                </div>
             </div>
         )
     }

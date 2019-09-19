@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import NavBar from './general/NavBar';
-import Footer from './general/Footer';
+import NavBar from '../general/NavBar';
+import Footer from '../general/Footer';
+import CategoriesContainer from './CategoriesContainer';
 
 class Home extends Component {
 
@@ -44,10 +45,7 @@ class Home extends Component {
                     <h5 className="mt-5 mb-3">CATEGORÍAS PRINCIPALES</h5>
                 </div>
                 <div className="flex">
-                    <button className="btn btn-warning text-white ml-3">MESAS</button>
-                    <button className="btn btn-warning text-white ml-3">MUEBLES</button>
-                    <button className="btn btn-warning text-white ml-3">BANQUETAS</button>
-                    <button className="btn btn-warning text-white ml-3">BARRAS</button>
+                    <CategoriesContainer/>
                 </div>
 
                 <div className="bg-white mt-3 py-4">

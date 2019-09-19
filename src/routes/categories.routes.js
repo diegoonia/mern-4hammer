@@ -14,15 +14,15 @@ router.get('/:id', async (req, res) => {
  });
 
 router.post('/', async (req, res) => {
-    const { title, description } = req.body;
-    const category = new Category({title,description});
+    const { title } = req.body;
+    const category = new Category({title});
     await category.save();
     res.json({status: 'Category saved'});
 });
 
 router.put('/:id', async (req, res) => {
-    const { title, description } = req.body;
-    const newCategory = {title, description};
+    const { title } = req.body;
+    const newCategory = {title};
     await Category.findByIdAndUpdate(req.params.id, newCategory);
     res.json({status: 'Category Updated'});
 })

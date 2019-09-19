@@ -35,6 +35,14 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.3);
   }
 
+@media (max-width: 768px) { 
+  .fa-wsp-btn {
+    width: 40px;
+    height: 40px;
+    padding: 4px 7px;
+  }
+}
+
 .fa-btn:hover {
     opacity: 0.7;
     text-decoration: none;
