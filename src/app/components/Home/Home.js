@@ -12,7 +12,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <NavBar/>
+                <NavBar />
 
                 <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
@@ -45,7 +45,7 @@ class Home extends Component {
                     <h5 className="mt-5 mb-3">CATEGORÍAS PRINCIPALES</h5>
                 </div>
                 <div className="flex">
-                    <CategoriesContainer/>
+                    <CategoriesContainer />
                 </div>
 
                 <div className="bg-white mt-3 py-4">
@@ -54,7 +54,37 @@ class Home extends Component {
                     </div>
                 </div>
 
-                <Footer/>
+                <div className="flex bg-white py-2">
+                    <div className="card text-center ml-2 mr-2 my-4" id="card">
+                        <a href="#">
+                        <img src="https://dummyimage.com/200x200/ff3000/FFF.png" className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Mesa 1</h5>
+                            <p className="card-text">$15.000</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div className="card text-center ml-2 mr-2 my-4" id="card">
+                        <a href="#">
+                        <img src="https://dummyimage.com/200x200/ff00ff/FFF.png" className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Mesa 2</h5>
+                            <p className="card-text">$15.000</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div className="card text-center ml-2 mr-2 my-4" id="card">
+                        <a href="#">
+                        <img src="https://dummyimage.com/200x200/aaffc9/FFF.png" className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Mesa 3</h5>
+                            <p className="card-text">$15.000</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <Footer />
             </div>
         )
     }
